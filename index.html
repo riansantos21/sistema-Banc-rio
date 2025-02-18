@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><!--define idioma-->
+<head>
+    <meta charset="UTF-8"><!--comenta--><!--codificação de caracteres -->
+    <meta name="viewport"
+     content="width=device-width, initial-scale=1.0">
+    <title>sistema Bancario</title><!--titulo da aba-->
+<!--link para arquivo CSS externo-->
+<link rel="stylesheet" href="style.css">
+</head>
+<!--inclusão do script Js esterno qie vai controlar nas operacoes bancarias -->
+<script src="logica.js"></script>
+<body>
+    <!--contêiner principal para o conteudo da interface--><!--ou div class = "contêiner"-->
+    <div class = "conteiner">
+    
+    <!--titulo principal da aplicação-->
+    <h1>Sistemas Bancario</h1>
+
+    <h1>sistema Bancario 242N</h1>
+
+<!--campo de entrada para o valor -->
+<label form="valor">digite um valor</label><!--rotulo para o campo de valor-->
+<input type="number"id="valor"placeholder="Ex:100.00"><br><!--campo para inserir valor-->
+<button class= "botão1" onclick="sacar()">Sacar</button><!--botão para reaçizar o saque-->
+<button class="botão2" onclick="depositar()">Depositar</button><!--botão para realizar o deposito-->
+<button class= "botão3" onclick="historico()">tranferências</button>
+<button class= "botão4" onclick="datas()">Datas</button>
+<!--exibindo o saldo da conta-->
+<div class="balance">
+   Saldo= R$<span id="Saldo">0.00</span></div><!--exibição dinâmica do saldo-->
+</div>
+<div>
+    
+</div>
+</body>
+
+</html>
